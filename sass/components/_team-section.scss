@@ -1,0 +1,44 @@
+.team-section {
+  background-color: $background-lighten-color;
+  padding: 94px 0;
+}
+.staff-title {
+  margin-bottom: 50px;
+}
+.staff-list {
+  @include centeredFlex();
+
+  &__card {
+    width: 270px;
+
+    color: $element-white-color;
+    background-color: $element-white-color;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__desc {
+    padding: 30px 32px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    color: $main-text-color;
+    @extend %team-member-fonts;
+  }
+
+  &__profession {
+    margin-bottom: 16px;
+
+    color: $communication-text-color;
+    @extend %team-member-fonts;
+  }
+}

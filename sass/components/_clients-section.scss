@@ -1,0 +1,41 @@
+.clients-section {
+  padding: 94px 0;
+}
+.clients-title {
+  @extend %section-title;
+  margin-bottom: 50px;
+}
+.clients-list {
+  @include centeredFlex();
+  justify-content: center;
+
+  &__item {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    @include centeredFlex();
+    justify-content: center;
+
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid $logo-color;
+    border-radius: 4px;
+    color: $logo-color;
+    transition: border-color $transition-variable, color $transition-variable;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,82 @@
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $background-darken-color;
+}
+.adds {
+  margin-top: 20px;
+
+  &__location {
+    font-style: normal;
+    color: $element-white-color;
+    line-height: 1.71;
+  }
+}
+
+.footer-list {
+  margin-top: 9px;
+
+  &__item:last-child {
+    margin-top: 9px;
+  }
+
+  &__contact {
+    font-style: normal;
+    text-decoration: none;
+    color: $communication-text-alternate;
+    line-height: 1.71;
+    transition: color $transition-variable;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.logo__footer-logo {
+  color: $element-white-color;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+.footer-socials-wrap {
+  margin-left: 70px;
+}
+.footer-title {
+  @extend %footer-title-font;
+}
+
+.footer-subscription {
+  margin-left: 93px;
+
+  &__form {
+    display: flex;
+  }
+
+  &__email-field {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+
+    color: $element-white-color;
+    background-color: $background-darken-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border-color $transition-variable;
+    outline: none;
+    &:valid {
+      border-color: $accent-color;
+    }
+  }
+
+  .icon-send {
+    margin-left: 10px;
+  }
+  .footer-submit {
+    margin-left: 12px;
+  }
+}

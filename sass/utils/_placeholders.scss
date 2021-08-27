@@ -1,0 +1,39 @@
+%hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+%section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+%team-member-fonts {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+%footer-title-font {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $element-white-color;
+}

@@ -1,0 +1,48 @@
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  color: $main-text-color;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.section-headline {
+  @extend %section-title;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  width: 145px;
+
+  display: block;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $accent-color;
+}

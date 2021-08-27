@@ -1,0 +1,86 @@
+.header-section {
+  border-bottom: 1px solid $header-line-color;
+
+  &__container {
+    @include centeredFlex();
+  }
+}
+
+.logo__header-logo {
+  color: $alternate-text-color;
+}
+.nav-bar {
+  @include centeredFlex();
+}
+.page-list {
+  display: flex;
+  margin-left: 93px;
+
+  &__link {
+    padding: 32px 0;
+
+    text-decoration: none;
+    color: $main-text-color;
+    font-family: $main-font;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color $transition-variable;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+
+  &__link {
+    @include centeredFlex();
+
+    padding: 32px 0;
+
+    color: $communication-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color $transition-variable;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__item:first-child {
+    margin-right: 50px;
+  }
+}
+
+.current {
+  position: relative;
+  color: $accent-color;
+}
+.current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+.icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
