@@ -1,23 +1,23 @@
 .header-section {
   border-bottom: 1px solid $header-line-color;
 
-  &__container {
-    @include centeredFlex();
-  }
+  // &__container {
+  //   @include centeredFlex();
+  // }
 }
 
 .logo__header-logo {
   color: $alternate-text-color;
 }
 .nav-bar {
-  @include centeredFlex();
+  // @include centeredFlex();
 }
 .page-list {
-  display: flex;
-  margin-left: 93px;
+  // display: flex;
+  // margin-left: 93px;
 
   &__link {
-    padding: 32px 0;
+    // padding: 32px 0;
 
     text-decoration: none;
     color: $main-text-color;
@@ -33,19 +33,19 @@
     }
   }
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }
 
 .contact-list {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
 
   &__link {
     @include centeredFlex();
 
-    padding: 32px 0;
+    // padding: 32px 0;
 
     color: $communication-text-color;
     text-decoration: none;
@@ -60,7 +60,7 @@
   }
 
   &__item:first-child {
-    margin-right: 50px;
+    // margin-right: 50px;
   }
 }
 
