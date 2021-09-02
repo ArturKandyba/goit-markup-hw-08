@@ -2,18 +2,23 @@
   @extend %section-title;
 }
 .clients-list {
-  @media screen and (min-width: 320px) and (max-width: 479px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
+
   // justify-content: center;
 
   &__item {
     // display: flex;
 
-    @media screen and (min-width: 320px) and (max-width: 479px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       flex-basis: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc((100% - 3 * 30px) / 3);
       margin: 15px;
     }
   }
@@ -26,6 +31,9 @@
     @include centeredFlex();
     justify-content: center;
 
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     // width: 170px;
     // height: 90px;
 
@@ -37,10 +45,6 @@
     &:focus {
       color: $accent-color;
       border-color: $accent-color;
-    }
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-      padding-top: 16px;
-      padding-bottom: 16px;
     }
   }
 

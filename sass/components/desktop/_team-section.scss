@@ -1,42 +1,13 @@
 .team-section {
   background-color: $background-lighten-color;
 }
-.staff-title {
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    margin-bottom: 30px;
-  }
-  margin-bottom: 50px;
-}
+
 .staff-list {
   // @include centeredFlex();
 
-  &__card {
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-    }
-    color: $element-white-color;
-    background-color: $element-white-color;
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    // width: 270px;
-    // &:not(:last-child) {
-    //   margin-right: 30px;
-    // }
-  }
-
   &__desc {
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-      padding-top: 30px;
-      padding-bottom: 24px;
-    }
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      padding-top: 30px;
-      padding-bottom: 24px;
-    }
+    padding-top: 30px;
+    padding-bottom: 24px;
   }
 
   &__name {
@@ -52,5 +23,34 @@
 
     color: $communication-text-color;
     @extend %team-member-fonts;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  &__card {
+    background-color: $element-white-color;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    // color: $element-white-color;
+
+    // width: 270px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
 }

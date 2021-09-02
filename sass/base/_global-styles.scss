@@ -27,13 +27,14 @@ a {
 }
 
 .section-headline {
-  @media screen and (min-width: 320px) and (max-width: 479px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
   }
+
   @extend %section-title;
 }
 
@@ -46,28 +47,38 @@ a {
   font-size: 26px;
   line-height: 1.2;
   color: $accent-color;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .container {
-  // width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
 
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: 320px) and (max-width: 479px) {
     width: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
-  @media screen and (min-width: 480px) {
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
+}
+.header-section__container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
