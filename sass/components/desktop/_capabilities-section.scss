@@ -11,6 +11,7 @@
 
 .capabilities-list {
   @include centeredFlex();
+  justify-content: center;
 
   &__item:not(:last-child) {
     margin-right: 30px;

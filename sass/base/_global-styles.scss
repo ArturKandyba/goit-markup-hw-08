@@ -19,6 +19,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -82,4 +84,27 @@ a {
 .header-section__container {
   padding-top: 0;
   padding-bottom: 0;
+}
+.thumb {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .thumb {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .thumb {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb {
+    min-width: 270px;
+  }
 }

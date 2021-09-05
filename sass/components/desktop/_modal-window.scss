@@ -1,8 +1,8 @@
 .modal-window {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
-  padding: 40px;
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
@@ -16,6 +16,10 @@
     min-width: 450px;
     min-height: 609px;
   }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    top: 100%;
+  }
+
   &__close-button {
     position: absolute;
     top: 8px;
@@ -154,7 +158,7 @@
     @extend %hidden;
     &:checked + .accept-condition__check-mark {
       border-color: $accent-color;
-      background-image: url(../images/icon-check-mark.svg);
+      background-image: url(../img/icon-check-mark.svg);
       background-origin: border-box;
       background-size: contain;
       background-repeat: no-repeat;
