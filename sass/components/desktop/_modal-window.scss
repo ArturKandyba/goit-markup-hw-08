@@ -12,11 +12,7 @@
   border-radius: 4px;
   background-color: $element-white-color;
 
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    min-width: 290px;
-    min-height: 392px;
-  }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     min-width: 450px;
     min-height: 609px;
   }
