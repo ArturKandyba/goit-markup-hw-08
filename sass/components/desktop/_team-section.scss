@@ -1,9 +1,19 @@
 .team-section {
   background-color: $background-lighten-color;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-
+.staff-title {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
 .staff-list {
-  // @include centeredFlex();
+  @media screen and (min-width: 1200px) {
+    @include centeredFlex();
+  }
 
   &__desc {
     padding-top: 30px;
@@ -45,12 +55,11 @@
       flex-basis: calc((100% - 2 * 30px) / 2);
       margin: 15px;
     }
-
-    // color: $element-white-color;
-
-    // width: 270px;
-    // &:not(:last-child) {
-    //   margin-right: 30px;
-    // }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+        width: 270px;
+      }
+    }
   }
 }

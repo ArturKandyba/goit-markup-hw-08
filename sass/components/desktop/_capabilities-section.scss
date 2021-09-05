@@ -6,15 +6,15 @@
 }
 
 .capabilities-title {
-  // margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .capabilities-list {
-  // @include centeredFlex();
+  @include centeredFlex();
 
-  // &__item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 
   &__item {
     position: relative;
@@ -26,7 +26,7 @@
     left: 0;
     bottom: 0;
     height: 70px;
-    max-width: 479px;
+    width: 100%;
 
     justify-content: center;
 

@@ -1,11 +1,24 @@
 .footer-section {
   background-color: $background-darken-color;
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.footer-content {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer-holder {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-around;
     align-items: baseline;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
+
     margin-bottom: 60px;
   }
 }
@@ -16,7 +29,7 @@
   }
 }
 .adds {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     text-align: center;
   }
 
@@ -33,6 +46,9 @@
   @media screen and (min-width: 320px) and (max-width: 1199px) {
     margin-top: 8px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
   &__item {
     @media screen and (min-width: 320px) and (max-width: 1199px) {
       text-align: center;
@@ -42,8 +58,9 @@
     @media screen and (min-width: 320px) and (max-width: 1199px) {
       margin-top: 8px;
     }
-
-    // margin-top: 9px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 9px;
+    }
   }
 
   &__contact {
@@ -63,17 +80,14 @@
   color: $element-white-color;
 }
 
-// .footer-content {
-// display: flex;
-// align-items: baseline;
-// }
 .footer-socials-wrap {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-top: 60px;
     margin-bottom: 60px;
   }
-
-  // margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 .footer-title {
   @extend %footer-title-font;
@@ -83,11 +97,15 @@
 }
 
 .footer-subscription {
-  // margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 
   &__form {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       display: flex;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       flex-direction: column;
       align-items: center;
     }
@@ -96,7 +114,6 @@
     align-items: center;
   }
   &__email-field {
-    // width: 358px;
     height: 50px;
     padding: 15px 16px;
 
@@ -117,17 +134,22 @@
       width: 450px;
       margin-bottom: 20px;
     }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
 
   .icon-send {
     margin-left: 10px;
   }
   .footer-submit {
-    // margin-left: 12px;
     @media screen and (min-width: 320px) and (max-width: 767px) {
       margin-top: 20px;
       margin-left: auto;
       margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
     }
   }
 }

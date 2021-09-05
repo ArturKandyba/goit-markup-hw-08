@@ -12,6 +12,14 @@
   border-radius: 4px;
   background-color: $element-white-color;
 
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    min-width: 290px;
+    min-height: 392px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
   &__close-button {
     position: absolute;
     top: 8px;
@@ -41,6 +49,10 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      line-height: 1.5;
+    }
   }
 
   &__form {
@@ -118,6 +130,12 @@
 
   &__policy-link {
     color: $accent-color;
+    text-decoration: underline;
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+    }
   }
 
   &__check-mark {
@@ -129,7 +147,13 @@
     transition: filter $transition-variable, border-color $transition-variable,
       background-image $transition-variable;
   }
-
+  &__text-agree {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+    }
+  }
   &__checkbox {
     @extend %hidden;
     &:checked + .accept-condition__check-mark {
