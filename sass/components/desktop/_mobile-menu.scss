@@ -35,9 +35,7 @@
     display: none;
   }
 }
-.js-open-menu {
-  margin-left: 264px;
-}
+
 .js-close-menu {
   position: absolute;
   top: 0;
@@ -96,6 +94,10 @@
   display: flex;
   margin-top: 64px;
   margin-left: 40px;
+  @media screen and (max-width: 450px) {
+    // flex-direction: column;
+  }
+
   &__link {
     font-weight: 500;
     font-size: 18px;

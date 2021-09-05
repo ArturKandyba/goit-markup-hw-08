@@ -11,7 +11,7 @@
   }
 }
 .clients-list {
-  @media screen and (min-width: 320px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -22,7 +22,7 @@
   }
 
   &__item {
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       flex-basis: calc((100% - 2 * 30px) / 2);
       margin: 15px;
     }

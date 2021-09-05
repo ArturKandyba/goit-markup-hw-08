@@ -96,11 +96,14 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      width: 360px;
+    }
     @media screen and (max-width: 1199px) {
       font-size: 26px;
       line-height: 1.61;
-      width: 360px;
     }
+
     @media screen and (min-width: 1200px) {
       width: 696px;
     }
