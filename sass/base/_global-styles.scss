@@ -3,6 +3,9 @@ body {
   font-size: 14px;
   color: $main-text-color;
   letter-spacing: 0.03em;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,
