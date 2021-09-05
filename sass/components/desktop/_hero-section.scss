@@ -98,6 +98,10 @@
     text-transform: uppercase;
     @media screen and (min-width: 480px) and (max-width: 1199px) {
       width: 360px;
+      margin-top: 58px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      margin-top: 58px;
     }
     @media screen and (max-width: 1199px) {
       font-size: 26px;

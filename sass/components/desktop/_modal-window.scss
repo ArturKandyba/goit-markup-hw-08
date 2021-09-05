@@ -28,8 +28,8 @@
 
   &__close-button {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 4%;
+    right: 4%;
     display: flex;
     align-items: center;
 
@@ -113,6 +113,9 @@
     resize: none;
     outline: none;
     transition: border-color $transition-variable;
+    @media screen and (min-width: 320px) {
+      max-height: 110px;
+    }
   }
 
   &:focus-within .form-box__field,

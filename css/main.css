@@ -98,7 +98,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -433,7 +433,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .current::after {
-    bottom: -10px;
+    opacity: 0;
   }
 }
 
@@ -546,6 +546,13 @@ a {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .hero-section__title {
     width: 360px;
+    margin-top: 58px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero-section__title {
+    margin-top: 58px;
   }
 }
 
@@ -631,6 +638,12 @@ a {
   font-size: 14px;
   line-height: 1.15;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-list__title {
+    text-align: center;
+  }
 }
 
 .feature-list__description {
@@ -1188,9 +1201,6 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1205,9 +1215,12 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filter-list {
     margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1316,7 +1329,7 @@ a {
   opacity: 1;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .card-set__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1326,22 +1339,27 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
   }
 }
 
 .card-set__filter {
   color: #757575;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 .card-set__thumb {
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
 }
 
 .card-set__overlay {
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1443,8 +1461,8 @@ a {
 
 .modal-window__close-button {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 4%;
+  right: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1552,6 +1570,12 @@ a {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 320px) {
+  .form-box__comment-area {
+    max-height: 110px;
+  }
+}
+
 .form-box:focus-within .form-box__field,
 .form-box:focus-within .form-box__comment-area {
   border-color: #2196f3;
@@ -1636,7 +1660,6 @@ a {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
   z-index: 2;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
@@ -1713,9 +1736,19 @@ a {
   color: #2196f3;
 }
 
+.mobile-page-list .current {
+  color: #2196f3;
+}
+
 .mobile-contact-list {
   margin-top: 302px;
   margin-left: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  .mobile-contact-list {
+    margin-top: 130px;
+  }
 }
 
 .mobile-contact-list__item:not(:last-child) {
@@ -1749,6 +1782,18 @@ a {
   display: flex;
   margin-top: 64px;
   margin-left: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
+  .mobile-social-list {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 48px;
+  }
 }
 
 .mobile-social-list__link {
@@ -1761,6 +1806,13 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .mobile-social-list__link {
+    font-size: 14px;
+    line-height: 1.16;
+  }
+}
+
 .mobile-social-list__link:hover, .mobile-social-list__link:focus, .mobile-social-list__link:active {
   color: #188ce8;
 }
@@ -1769,5 +1821,12 @@ a {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .mobile-social-list__item:not(:last-child) {
+    margin-right: 7px;
+    padding-right: 7px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
