@@ -28,10 +28,14 @@
 
   &__close-button {
     position: absolute;
-    top: 4%;
-    right: 4%;
+    top: 8px;
+    right: 8px;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 350px) {
+      top: 4%;
+      right: 4%;
+    }
 
     width: 30px;
     height: 30px;
@@ -113,7 +117,7 @@
     resize: none;
     outline: none;
     transition: border-color $transition-variable;
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 320px) and (max-width: 400px) {
       max-height: 110px;
     }
   }
